@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+// color palette
+$purple: #6236ff;
+$red: #f9345e;
+$green: #1cb142;
+$orange: #fa6400;
+$dark: #1a1053;
+$grey: #817c9b;
+
+// resets
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// layout
+
+.app {
+  display: flex;
+  height: 100%;
+  background-color: $dark;
+
+  .side-nav {
+    background-color: $dark;
+    height: 100%;
+    width: 140px;
+    color: $grey;
+  }
+
+  .content {
+    background-color: white;
+    height: 100%;
+    flex: 1;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 4rem;
+  }
+}
